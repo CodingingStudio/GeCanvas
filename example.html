@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<title>Share Your Words With Your Friends.</title>
+	<script type="text/javascript">
+
+	var Debugger = function () {};
+	Debugger.log = function (message) {
+		try {
+			console.log(message);
+		} catch ( exception ) {
+			return ;
+		}
+	};
+
+	function submitWords () {
+		var textarea = document.getElementById('words');
+		var message = textarea.value;
+		var dataJson = {"fontKind":"normal", "background":"images/figure01.gif", "bgKind":"image", "message":message};
+		window.location.href="./CanvasBeautifulFont.html#" + dataJsonStr;
+	}
+
+	</script>
+
+	<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	nav {
+		margin: 10px;
+	}
+
+	.navbar ul {
+		overflow: hidden;
+	}
+
+	.navbar li {
+		float: left;
+		list-style-type: none;
+	}
+
+	.navbar a {
+		display: block;
+		padding: 4px 16px;
+		text-decoration: none;
+	}
+
+	.navbar li + li a {
+		border-left: 1px solid #aaa;
+	}
+
+	.navbar a:hover {
+		color: #C0C;
+	}
+
+	.brand {
+		font-size: 1.4em;
+	}
+
+	.active a {
+		font-style: italic;
+		color: #C51;
+	}
+
+	#content {
+		text-align: center;
+		margin: 0 auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	#words {
+		width: 90%;
+		padding: 2px;
+		margin: 5px;
+	}
+
+	.blue-btn {
+		display: inline-block;
+		padding: 6px 12px;
+		margin-bottom: 0px;
+		font-weight: 400;
+		line-height: 1.42857;
+		text-align: center;
+		vertical-align: middle;
+		cursor: pointer;
+		-moz-user-select: none;
+		background-image: none;
+		border: 1px solid transparent;
+		border-radius: 4px;
+		color: #FFF;
+		font-color: #FFF;
+		background-color: #428BCA;
+		border-color: #357EBD;
+	}
+
+	.blue-btn {
+		width: 30%;
+	}
+
+	</style>
+</head>
+
+<body>
+	<nav class="navbar">
+		<ul>
+			<li class="brand"><a href="">Ge&nbsp;Studio</a></li>
+			<li class="active"><a href="">Amazing&nbsp;Words</a></li>
+			<li class="nav"><a href="">Bubble&nbsp;Words</a></li>
+		</ul>
+	</nav>
+
+	<div id="content">
+		<p>Random</p>
+		<textarea id="words" rows="auto" wrap="virtual"></textarea>
+		<button id="submitwords" class="blue-btn" onclick="submitWords();">Check&nbsp;It!</button>
+	</div>
+</body>
+
+</html>

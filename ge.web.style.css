@@ -1,0 +1,26 @@
+a:link, a:visited {
+	text-decoration: none;
+}
+
+a:hover, a:active, a:focus {
+	color: blue;
+}
+
+.blue-btn {
+	display: inline-block;
+	padding: 6px 12px;
+	margin-bottom: 0px;
+	font-weight: 400;
+	line-height: 1.42857;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	-moz-user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	color: #FFF;
+	font-color: #FFF;
+	background-color: #428BCA;
+	border-color: #357EBD;
+}
